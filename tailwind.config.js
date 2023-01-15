@@ -14,6 +14,10 @@ module.exports = {
         error: "#b00020",
       },
     },
+    screens: {
+      mobile: "360px",
+      tablet: "768px",
+    },
   },
   plugins: [],
 };
