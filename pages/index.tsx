@@ -1,10 +1,10 @@
 import React from "react";
-import Profile from "./components/Profile";
+import ProfileArea from "./components/organisms/ProfileArea";
 
 const MainPage = () => {
   return (
     <div>
-      <Profile></Profile>dd
+      <ProfileArea></ProfileArea>
     </div>
   );
 };
