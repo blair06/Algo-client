@@ -1,5 +1,4 @@
-import React from "react";
-import ProfileInfoCard from "../../molecules/ProfileInfoCard";
+import ProfileInfoCard from "components/molecules/ProfileInfoCard";
 
 const ProfileArea = () => {
   return (
