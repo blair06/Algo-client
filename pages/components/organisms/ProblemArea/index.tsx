@@ -9,6 +9,11 @@ const ProblemArea = () => {
       <CategoryLabel>Problems</CategoryLabel>
       <div className="pt-11 px-11 grid grid-cols-4 gap-4">
         <ProblemCard></ProblemCard>
+        <ProblemCard></ProblemCard>
+        <ProblemCard></ProblemCard>
+        <ProblemCard></ProblemCard>
+        <ProblemCard></ProblemCard>
+        <ProblemCard></ProblemCard>
       </div>
     </>
   );
