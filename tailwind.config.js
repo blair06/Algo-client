@@ -20,11 +20,26 @@ module.exports = {
         "tier-diamond": "#02b4fc",
         "tier-ruby": "#ff1962",
       },
+      animation: {
+        openmenu: "openmenu 1s ease-in",
+        closemenu: "closemenu 1s ease-in",
+      },
+      keyframes: {
+        openmenu: {
+          "0%": { right: "-24rem" },
+          "100%": { right: "0px" },
+        },
+        closemenu: {
+          "0%": { right: "0px" },
+          "100%": { right: "-24rem" },
+        },
+      },
     },
     screens: {
       mobile: "360px",
       tablet: "768px",
     },
   },
+  darkMode: "class",
   plugins: [],
 };
