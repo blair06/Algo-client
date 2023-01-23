@@ -1,8 +1,9 @@
+import MemberArea from "components/organisms/MemberArea";
 import ProfileArea from "components/organisms/ProfileArea";
 import React, { useState } from "react";
 
 const BaseTemplate = ({ children }: { children: React.ReactNode }) => {
-  const [openSideArea, setOpenSideArea] = useState<boolean>();
+  const [openSideArea, setOpenSideArea] = useState<boolean>(false);
   return (
     <>
       <div className="flex h-screen overflow-y-hidden">
@@ -18,14 +19,7 @@ const BaseTemplate = ({ children }: { children: React.ReactNode }) => {
 
         <ProfileArea></ProfileArea>
         {children}
-        {/* <div
-          className={`w-96 h-screen absolute right-0 bg-primary
-          ease-in-out duration-300 ${
-            openSideArea ? "translate-x-0 " : "translate-x-full"
-          }`}
-        >
-          dd
-        </div> */}
+        <MemberArea openSideArea={openSideArea}></MemberArea>
       </div>
     </>
   );
